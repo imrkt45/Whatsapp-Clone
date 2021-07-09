@@ -74,7 +74,7 @@ const App: () => Node = () => {
             <DebugInstructions />
           </Section>
           <Section title="Learn More">
-            Manikant
+            Raj kumar tiwari
           </Section>
           <LearnMoreLinks />
         </View>
