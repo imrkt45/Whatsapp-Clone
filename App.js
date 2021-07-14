@@ -1,105 +1,57 @@
-
 import React from 'react';
-import type {Node} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import { Text, View } from 'react-native';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
 
-const Section = ({children, title}): Node => {
-  const isDarkMode = useColorScheme() === 'dark';
+const App = () => {
   return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-};
 
-const App: () => Node = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            you tube <Text style={styles.highlight}>CodeX</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Raj kumar tiwari
-          </Section>
-          <LearnMoreLinks />
+    <View style={{ backgroundColor: "#0f0f0e", flex: 1, alignItems: "center", justifyContent: "center", padding: 10, paddingBottom: 0, }}>
+      <View style={{ flex: 1, width: "100%" }}>
+        <View style={{ backgroundColor: "#0b82b5", alignItems: "center" }}>
+          <Text style={{ fontWeight: "bold", fontSize: 20 }}>WhatsApp</Text>
         </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-};
+        <View style={{ flexDirection: "row", }}>
+          <View style={{ marginRight: 10 }}>
+            <Text style={{ color: "white" }}>pic</Text>
+          </View>
+          <View style={{ flex: 1 }}>
+            <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
 
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
+              <Text style={{ fontWeight: "bold", fontSize: 15, color: "white" }}>Raj Kumar Tiwari</Text>
+              <Text style={{ color: "green" }}>online</Text>
 
+            </View>
+            <View style={{ flexDirection: "row" }}>
+              <Text style={{ color: "#c9c5b9" }}>fdkfwjfofnefn,mnjrogjebewojrqopwjebfdnfsfijewjehfnwjophejhfiifeii</Text>
+              <Text style={{ color: "blue" }}>3</Text>
+            </View>
+          </View>
+        </View>
+
+        <View style={{ height: 70, width: 70, borderRadius: 35, backgroundColor: "green", position: "absolute",alignItems:"center",justifyContent:"center",bottom:50,right:30 }}>
+          <Text style={{color:"white"}}>sms</Text>
+
+
+        </View>
+
+
+
+
+
+
+
+
+
+
+      </View>
+
+
+
+    </View>
+
+
+
+
+  )
+}
 export default App;
