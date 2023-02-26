@@ -1,0 +1,14 @@
+import React from "react";
+import { View, Text } from "react-native";
+
+import Home from './component/Home'
+const App = () => {
+const Data = "some data"
+  return (
+    <View>
+      <Home data={Data} />
+    </View>
+  );
+
+};
+export default App; 

@@ -1,0 +1,17 @@
+import React from "react";
+import { View, Text,Button } from "react-native";
+import Login from "./components/Login";
+const App = () => {
+  function login(){
+    alert("login function")
+  }
+    return (
+        <View>
+            <Text style={{fontSize:40}}> hello react native </Text>
+          <Button title="Login"onPress={login} />
+
+        </View>
+    );
+    
+};
+export default App;

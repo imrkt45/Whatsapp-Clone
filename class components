@@ -1,0 +1,14 @@
+import React, { Component } from "react";
+import { View, Text, Button } from "react-native";
+classs App extends Components {
+    render(){
+        return (
+            <View>
+            <Text>hello react native < /Text>
+                < Button onPress = {()=> alert("hello raj" } title = "Press me />
+        </View>
+        )
+}
+}
+
+export default App;
